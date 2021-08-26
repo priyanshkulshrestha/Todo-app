@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  /* border: 1px solid red; */
+}
+.bgdark {
+  background-color: black;
+}
+.dark-mode {
+  background-color: white;
+  color: rgb(30, 9, 65);
+}
+body {
+  background: black;
+  color: rgb(30, 9, 65);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100vw;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+  color: rgb(139, 88, 221);
+  padding: 10px;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+.container {
+  display: flex;
+  /* width: 70vw; */
+  background: rgba(168, 166, 166, 0.542);
+  padding: 20px;
+  margin: 5px;
+  /* margin-bottom: 50px; */
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.addtasks input,
+.addtasks button {
+  font-size: x-large;
+  border: none;
+  /* border-radius: 2px; */
+  padding: 5px;
+}
+.addtasks {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.addtasks input {
+  width: 75%;
+}
+.addtasks button {
+  width: 25%;
+  background: rgb(232, 181, 252);
+  border: 2px solid rgb(70, 46, 109);
+}
+
+.addtasks button:hover {
+  width: 25%;
+  border: 1px solid rgb(70, 46, 109);
+  box-shadow: 1px 1px 5px 1px rgb(30, 9, 65);
+}
+
+.addtasks button:disabled {
+  background: rgb(204, 156, 223);
+  border: none;
+  box-shadow: none;
+}
+
+.lastportion {
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: x-large;
+}
+button {
+  padding: 10px;
+  /* cursor: pointer; */
+  color: black;
+  font-weight: 200;
+}
+.taskshow {
+  width: 100%;
+  font-size: x-large;
+  margin: 10px;
+  margin-top: 20px;
+}
+.task {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  background: rgb(169, 147, 230);
+  box-shadow: 1px 1px 5px 3px rgba(4, 0, 255, 0.33);
+}
+
+.task:hover {
+  transform: scale(1.03);
+}
+
+.taskstart > input {
+  padding: 10px;
+}
+
+.task > input {
+  padding: 10px;
+  background-color: blue;
+}
+
+:checked + .taskname {
+  text-decoration: line-through;
+  /* background-color: black; */
+}
+
+:checked {
+  background-color: black;
+}
+.checkbox {
+  min-width: 40px;
+}
+.trash {
+  height: 100%;
+  padding: 15px;
+}
+.trash:hover {
+  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.282);
+  background-color: rgba(112, 68, 182, 0.563);
+}
+.taskname {
+  padding: 10px;
+}
+.pending {
+  display: flex;
+  align-items: center;
+}
+.deleteall {
+  background: rgba(232, 181, 252, 0.816);
+  border: 1px solid purple;
+}
+.deleteall:hover {
+  background: rgb(201, 146, 255);
+  border: 1px solid rgb(83, 94, 181);
+  box-shadow: 1px 1px 5px 1px rgb(177, 21, 255);
+  /* text-weight: bolder; */
+  transform: scale(1.05);
+}
+.deleteall:disabled {
+  border: none;
+  box-shadow: none;
+  background: rgba(232, 181, 252, 0.816);
+  transform: none;
+}
+.lastportion {
+  background: rgb(184, 170, 223);
+  padding: 5px;
+}
+.boxparent {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: gradient 1s ease infinite;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.box {
+  /* border: 2px solid greenyellow; */
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  /* align-cont: center;  */
+  justify-content: center;
+}
+.togglebutton {
+  padding: 5px;
+  height: min-content;
+}
+
+.updatebtn {
+  background: rgb(201, 146, 255);
+  border: 1px solid rgb(83, 94, 181);
+
+  margin: 10px;
+}
+.updatebtn:hover {
+  box-shadow: 1px 1px 5px 1px rgb(177, 21, 255);
+  transform: scale(1.05);
+  font-weight: bold;
+}
+input:focus,
+textarea:focus {
+  border: 2px solid rgb(177, 21, 255);
+  border-radius: 0px;
+  color: rgb(47, 12, 65);
+}
+
+.daybtn {
+  padding: 0px;
+  background: white;
+  border: 1px solid rgb(83, 94, 181);
+  margin: 3px;
+  width: 42%;
+}
+.daybtn:hover {
+  box-shadow: 1px 1px 5px 1px rgb(177, 21, 255);
+  transform: scale(1.05);
+  font-weight: bold;
+}
